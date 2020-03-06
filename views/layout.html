@@ -5,18 +5,61 @@
         <meta charset="utf-8">
         <meta name="description" content="Currículo">
         <title>Hériclys Sousa Borges</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
         
        <!-- <link type="text/css" rel="stylesheet" href="estilo.css"> -->
         
         <style>
-            h2{color: black}
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            body {
+                background: #282a36;
+                text-align: center;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+
+            header{
+                padding: 32px;
+                border-bottom: 1px solid #333;
+                background: rgba(0, 0, 0, 0.1)
+            }
+
+            header div{
+                text-align: center;
+            }
+
+            header div a{
+                color: white;
+                font-size: 18px;
+                line-height: 28px;
+                margin: 0 16px;
+                padding-bottom: 3px;
+                text-decoration: none;
+            }
+
+            header div a:hover{
+                color: #50fa7b;
+                transition: color 200ms;
+            }
         </style>
         
     </head>
     
     <body>
 
-      {% block content %}{% endblock content %}
+        <header>
+            <div>
+                <a href="#">Sobre</a>
+                <a href="#">Qualificações</a>
+            </div>
+        </header>
+
+        {% block content %}{% endblock content %}
          
     </body>
     
