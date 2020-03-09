@@ -93,16 +93,28 @@ header{
   margin-bottom: 10px;
 }
 
-/*
-.card {
-  background-color: #7159c1;
-}
+/* ===== MODAL ===== */
 
-.card__image-container img{
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
 }
 
-.card__content {
-  padding: 24px;
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
 }
-*/
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
