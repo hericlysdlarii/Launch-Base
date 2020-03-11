@@ -4,9 +4,9 @@ const nunjucks = require('nunjucks')
 const server = express()
 
 server.use(express.static('public'))
-server.use(express.static('media'))
 
-server.set("view engine", "html")
+server.set("view engine", "njk")
+const videos = require("./data")
 
 nunjucks.configure("views", {
   express:server
@@ -21,7 +21,7 @@ server.get("/portfolio", function(req, res){
 })
 
 server.get("/hobbies", function(req, res){
-  return res.render("hobbies")
+  return res.render("hobbies", {items: videos})
 })
 
 server.listen(5000, function(){

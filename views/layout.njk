@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        
+        <title>Hériclys Sousa Borges</title>
+        
+        {% block head %}
+            
+        {% endblock head %}
+
+        <link href="/styles.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <header>
+            <div class="links">
+                <a href="/">Sobre</a>
+                <a href="portfolio">Qualificações</a>
+                <a href="hobbies">Hobbies</a>
+            </div>
+        </header>
+
+        {% block content %}{% endblock content %}
+         
+    </body>
+    
+</html>

@@ -113,6 +113,7 @@ header {
 
 .card {
   background-color: var(--color-fundo);
+  display: grid;
 }
 
 .card__image-container img {
@@ -127,6 +128,7 @@ header {
 .card__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .card__info p{
