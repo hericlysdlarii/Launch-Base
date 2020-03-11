@@ -9,11 +9,23 @@ server.set("view engine", "njk")
 const videos = require("./data")
 
 nunjucks.configure("views", {
-  express:server
+  express:server,
+  autoescape: false
 })
 
 server.get("/", function(req, res){
-  return res.render("about")
+  const about = {
+    avatar_url: "https://avatars2.githubusercontent.com/u/38103867?s=400&u=24ae22b72c6fe7c0aaaa88b4e021a17a8e27a3b0&v=4",
+    name: "Hériclys Sousa",
+    role: "Graduando - UFPI",
+    description: "Programador front/backend, Programador mobile. Inglês intermediário.",
+    link: [
+      { name: "Github", url: "https://github.com/hericlysdlarii" },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/h%C3%A9riclys-d-larii-23740219b/" },
+      { name: "Instagram", url: "https://www.instagram.com/dlarii44/" }
+    ]
+  }
+  return res.render("about", {about: about})
 })
 
 server.get("/portfolio", function(req, res){
