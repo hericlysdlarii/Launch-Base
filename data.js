@@ -3,7 +3,8 @@ module.exports = [
     id: "inYenSJ9yjI",
     title: "Deixe-me ir - 1kilo | Cover - Hériclys D'Larii",
     duration: "30 seg",
-    instrument: "Cavaco"
+    instrument: "Cavaco",
+    featured: true
   },
   {
     id: "Y5Puqiazai0",
@@ -15,13 +16,15 @@ module.exports = [
     id: "_3uPRzfHIPM",
     title: "Girassóis de Van Gogh - Baco Exu dos Blues | Cover - Hériclys D'Larii",
     duration: "30 seg",
-    instrument: "Cavaco"
+    instrument: "Cavaco",
+    featured: true
   },
   {
     id: "i98h1Zo35GM",
     title: "Ousado Amor - Isaias Saad | Cover - Hériclys D'Larii",
     duration: "30 seg",
-    instrument: "Violão"
+    instrument: "Violão",
+    featured: true
   },
   {
     id: "rb80MXzJbvU",
